@@ -1,7 +1,6 @@
 var agora = new Date()
 var hora = agora.getHours()
 var texto = window.document.getElementById('horas')
-var img = window.document.getElementById('img')
 texto.innerHTML = `agora são ${hora} horas`
 if (hora < 12 ) {
     document.body.style.backgroundColor = '#dbdf92'
