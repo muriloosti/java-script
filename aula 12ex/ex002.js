@@ -9,7 +9,7 @@ function verificar() {
     var idade = ano - nascimento
 
     var res = document.getElementById('res')
-    if (idade < 0 || nascimento <= 0) {
+    if (idade < 0 || nascimento <= 0) { 
         window.alert('data invalida, tente novamente')
     } else if (sexo[0].checked && idade < 18) {
         res.innerHTML = `detectamos um Homen com ${idade}`
