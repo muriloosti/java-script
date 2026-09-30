@@ -2,7 +2,7 @@
 
 body {
     background-color: rgb(70, 142, 236);
-    font: normal 15px arial;
+    font: normal, 15px arial;
 }
 header {
     color: white;
