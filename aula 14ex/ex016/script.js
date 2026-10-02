@@ -1,18 +1,19 @@
 function enviar() {
-    var inicio = document.getElementById('inicio')
-    var fim = document.getElementById('fim')
-    var passo = document.getElementById('passo')
+    var txtinicio = document.getElementById('inicio')
+    var txtfim = document.getElementById('fim')
+    var txtpasso = document.getElementById('passo')
     var res = document.getElementById('res')
     res.innerHTML = ''
-    if (inicio.value == '' || fim.value == '' || passo.value == '') {
+    if (txtinicio.value == '' || txtfim.value == '' || txtpasso.value == '') {
         res.innerHTML = 'Impossivel contar'
     } else {
-        var inicio = Number(inicio.value)
-        var fim = Number(fim.value)
-        var passo = Number(passo.value)    
+        var inicio = Number(txtinicio.value)
+        var fim = Number(txtfim.value)
+        var passo = Number(txtpasso.value)    
         for (inicio; inicio <= fim;  inicio += passo) {
-            res.innerHTML += `${inicio} `
+            res.innerHTML += `${inicio} \u{1F449}`
         }   
     }
+    res.innerHTML += '\u{1F3C1}'
 }
     
