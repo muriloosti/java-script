@@ -1,0 +1,67 @@
+@charset "UTF=8";
+
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 15px arial;
+}
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#res {
+    background-color: lightblue;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+}
+
+#num {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+
+}
+
+#limpar {
+    flex: 1 0 500px;
+    height: 40px;
+}
+
+#operação {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.botão {
+    flex: 1 0 150px;
+    height: 40px;
+}
+
+.operadores {
+    flex: 1 0 100px;
+    height: 40px;   
+}
+
+#resultado-conta {
+    flex: 1 0 100px;
+    height: 40px;      
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
