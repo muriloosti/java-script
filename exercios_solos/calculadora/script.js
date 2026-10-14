@@ -26,13 +26,17 @@ botaoLimpar.addEventListener('click', function() {
 botaoResultado.addEventListener('click', function() {
     let expressao = resultado.innerText
     let expressao_split = expressao.split(" ")
+    console.log(expressao)
     
     let num1 = Number(expressao_split[0])
     let operador = expressao_split[1]
     let num2 = Number(expressao_split[2])
 
+    console.log('Número 1:', num1)
+    console.log('Operador:', operador)
+    console.log('Número 2:', num2)
+
     let conta_final = 0
-    
     switch (operador) {
         case '+':
             conta_final = num1 + num2 
