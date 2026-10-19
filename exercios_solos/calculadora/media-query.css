@@ -1,0 +1,31 @@
+@media screen  and (max-width:530px) {
+    body {
+
+    }
+
+    section {
+        width: 300px;
+        min-height: 60px;
+    }
+
+    .botão {
+        flex: 1 0 50px;
+        min-height: 60px;
+    }
+
+    .operadores {
+        flex: 1 0 50px;
+        min-height: 60px;
+    }
+
+    #virgula  {
+        flex: 1 0 50px;
+        min-height: 60px;
+    }
+    
+
+    #limpar {
+        flex: 1 0 300px;
+        min-height: 60px;
+    }
+}

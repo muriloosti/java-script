@@ -1,6 +1,7 @@
 let resultado = document.getElementById('res')
 let botoes = document.querySelectorAll(".botão")
 let botoesOperadores = document.querySelectorAll(".operadores")
+let botaoVirgula = document.getElementById('virgula')
 let botaoLimpar = document.getElementById('limpar')
 let botaoResultado = document.getElementById('resultado-conta')
 botoes.forEach(botao => {
@@ -19,6 +20,18 @@ botoesOperadores.forEach(botaoOp => {
     });
 });
 
+botaoVirgula.addEventListener('click', function() {
+    let partes = resultado.innerText.split(' ')
+    let ultimoNumero = partes[partes.length - 1]
+    if (!ultimoNumero.includes(',')) {
+        if (ultimoNumero === '') {
+            resultado.innerText += 0 
+        } else {
+            resultado.innerText += ','
+        }
+    }
+})
+
 botaoLimpar.addEventListener('click', function() {
     resultado.innerText = ""
 });
@@ -34,7 +47,7 @@ botaoResultado.addEventListener('click', function() {
         if (c%2==0) {
             num.push(expressao_split[c])
             console.log(expressao_split[c])
-            num[num.length - 1] = Number(num[num.length - 1])
+            num[num.length - 1] = Number(num[num.length - 1].replace(',', '.'))
         } else {
             operador.push(expressao_split[c])
             console.log(expressao_split[c])

@@ -33,6 +33,21 @@ section {
 
 }
 
+.botão {
+    flex: 1 0 150px;
+    height: 40px;
+}
+
+.operadores {
+    flex: 1 0 80px;
+    height: 40px;   
+}
+
+#virgula {
+    flex: 1 0 80px;
+    height: 40px;   
+}
+
 #limpar {
     flex: 1 0 500px;
     height: 40px;
@@ -43,16 +58,6 @@ section {
     flex-flow: row wrap;
     margin-top: 5px;
     gap: 5px;
-}
-
-.botão {
-    flex: 1 0 150px;
-    height: 40px;
-}
-
-.operadores {
-    flex: 1 0 100px;
-    height: 40px;   
 }
 
 #resultado-conta {
